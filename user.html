@@ -9,11 +9,11 @@
       rel="stylesheet"
     />
     <title>index</title>
-    <script type="module" crossorigin src="/week5/assets/main-BmXmPDOx.js"></script>
-    <link rel="stylesheet" crossorigin href="/week5/assets/main-CXnb9LIH.css">
+    <script type="module" crossorigin src="/week5/assets/main-CC2QhkB7.js"></script>
+    <link rel="stylesheet" crossorigin href="/week5/assets/main-4N6xRI87.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom py-3">
   <div class="container">
     <a class="navbar-brand" href="#"
       ><img
@@ -43,28 +43,27 @@
           <a class="nav-link" href="#">聯絡我們</a>
         </li>
       </ul>
-      <a href="user.html"
-        ><img
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
-          alt="user-img"
-          class="user-img rounded-circle border me-2"
-        />Mokumaru</a
+      <button
+        type="button"
+        class="btn btn-outline-dark border rounded-4 py-2 px-5"
       >
+        登入/註冊
+      </button>
     </div>
   </div>
 </nav>
-    <main class="bg-gray">
-      <div class="container section-py-80">
+    <main class="bg-natural-95">
+      <div class="container py-7">
         <div class="row justify-content-center">
           <div class="col-10">
             <ul
-              class="nav nav-pills mb-4 justify-content-center"
+              class="nav nav-pills mb-5 justify-content-center tab-btn-bg"
               id="pills-tab"
               role="tablist"
             >
               <li class="nav-item me-4" role="presentation">
                 <button
-                  class="nav-link active"
+                  class="nav-link border active"
                   id="pills-home-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-home"
@@ -81,7 +80,7 @@
               </li>
               <li class="nav-item me-4" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link border"
                   id="pills-profile-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-profile"
@@ -98,7 +97,7 @@
               </li>
               <li class="nav-item me-4" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link border"
                   id="pills-contact-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-contact"
@@ -115,7 +114,7 @@
               </li>
             </ul>
             <div
-              class="tab-content rounded-panel shadow p-5"
+              class="tab-content rounded-3 bg-white shadow p-6"
               id="pills-tabContent"
             >
               <div
@@ -130,16 +129,16 @@
                   <div class="d-flex gap-4 mb-5">
                     <!--左側表單-->
                     <div class="flex-shrink-0 side-width">
-                      <h2 class="h4 mb-3">個人資料</h2>
+                      <h2 class="h4 mb-1">個人資料</h2>
                     </div>
                     <!--右側表單-->
                     <!--更新頭貼-->
                     <div class="main-width">
-                      <div class="d-flex align-items-end mb-4">
+                      <div class="d-flex align-items-end mb-5">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
                           alt="user-img"
-                          class="up-img rounded-circle border me-3"
+                          class="up-img rounded-circle border me-4"
                         />
                         <div>
                           <label for="file_upload" class="btn border"
@@ -156,7 +155,7 @@
                         </div>
                       </div>
                       <!--姓名-->
-                      <div class="form-floating mb-4">
+                      <div class="form-floating mb-5">
                         <input
                           type="text"
                           class="form-control"
@@ -167,7 +166,7 @@
                         <label for="name-text">姓名</label>
                       </div>
                       <!--性別-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">性別</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -208,7 +207,7 @@
                         </div>
                       </div>
                       <!--生日-->
-                      <div class="form-floating mb-4">
+                      <div class="form-floating mb-5">
                         <input
                           type="date"
                           class="form-control"
@@ -219,7 +218,7 @@
                         <label for="data">生日</label>
                       </div>
                       <!--密碼-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">密碼</p>
                         <button
                           type="button"
@@ -242,12 +241,12 @@
                           value="mokumaru@mail.com"
                         />
                         <label for="data">信箱</label>
-                        <p class="fs-6 text-secondary">
+                        <p class="fs-6 text-natural-50 mb-5">
                           盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
                         </p>
                       </div>
                       <!--電話-->
-                      <div class="form-floating mb-4">
+                      <div class="form-floating mb-5">
                         <input
                           type="tel"
                           class="form-control"
@@ -258,7 +257,7 @@
                         <label for="tel">聯絡電話</label>
                       </div>
                       <!--地址-->
-                      <div class="form-floating mb-4">
+                      <div class="form-floating mb-5">
                         <input
                           type="text"
                           class="form-control"
@@ -273,7 +272,7 @@
                   <div class="d-flex justify-content-center">
                     <button
                       type="button"
-                      class="btn btn-outline-dark border me-4 rounded-4"
+                      class="btn btn-outline-dark border me-5 rounded-4"
                     >
                       重新填寫<span
                         class="material-icons-outlined align-bottom"
@@ -297,24 +296,26 @@
                 aria-labelledby="pills-profile-tab"
                 tabindex="0"
               >
-                <h2 class="h4 mb-4">預約紀錄</h2>
+                <h2 class="h4 mb-5">預約紀錄</h2>
                 <div class="d-flex gap-4 mb-5">
                   <div class="card w-100 text-center">
                     <div class="card-body">
-                      <h3 class="fs-2 fw-bold text-blue">3</h3>
-                      <p class="sub-text">已完成諮詢</p>
+                      <h3 class="fs-2 fw-bold text-primary-60 mb-2">3</h3>
+                      <p class="text-natural-50 fs-5">已完成諮詢</p>
                     </div>
                   </div>
                   <div class="card w-100 text-center">
                     <div class="card-body">
-                      <h3 class="fs-2 fw-bold text-blue">2025/10/10</h3>
-                      <p class="sub-text">即將到來</p>
+                      <h3 class="fs-2 fw-bold text-primary-60 mb-2">
+                        2025/10/10
+                      </h3>
+                      <p class="text-natural-50 fs-5">即將到來</p>
                     </div>
                   </div>
                   <div class="card w-100 text-center">
                     <div class="card-body">
-                      <h3 class="fs-2 fw-bold text-blue">3/6</h3>
-                      <p class="sub-text">使用方案進度</p>
+                      <h3 class="fs-2 fw-bold text-primary-60 mb-2">3/6</h3>
+                      <p class="text-natural-50 fs-5">使用方案進度</p>
                     </div>
                   </div>
                 </div>
@@ -356,7 +357,7 @@
                 </div>
                 <table class="table table-striped table-hover">
                   <thead>
-                    <tr>
+                    <tr class="fs-7">
                       <th scope="col">諮詢方案</th>
                       <th scope="col">預約日期</th>
                       <th scope="col">諮詢時長</th>
@@ -370,10 +371,7 @@
                       <td>2025/11/11</td>
                       <td>60分鐘</td>
                       <td>
-                        <span
-                          class="badge rounded-pill text-bg-light text-secondary border"
-                          >視訊</span
-                        >
+                        <span class="badge rounded-pill border">視訊</span>
                       </td>
                       <td>等待上課</td>
                     </tr>
@@ -382,68 +380,53 @@
                       <td>2025/10/10</td>
                       <td>60分鐘</td>
                       <td>
-                        <span
-                          class="badge rounded-pill text-bg-light text-secondary border"
-                          >視訊</span
-                        >
+                        <span class="badge rounded-pill border">視訊</span>
                       </td>
                       <td>等待上課</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">
+                      <td class="text-natural-60">
                         職涯定位-職涯探索包 | 4/6堂
                       </td>
-                      <td class="text-secondary">2025/09/09</td>
-                      <td class="text-secondary">60分鐘</td>
+                      <td class="text-natural-60">2025/09/09</td>
+                      <td class="text-natural-60">60分鐘</td>
                       <td>
-                        <span
-                          class="badge rounded-pill text-bg-light text-secondary border"
-                          >視訊</span
-                        >
+                        <span class="badge rounded-pill border">視訊</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">
+                      <td class="text-natural-60">
                         職涯定位-職涯探索包 | 3/6堂
                       </td>
-                      <td class="text-secondary">2025/08/08</td>
-                      <td class="text-secondary">60分鐘</td>
-                      <td class="text-secondary">
-                        <span
-                          class="badge rounded-pill text-bg-light text-secondary border"
-                          >面對面</span
-                        >
+                      <td class="text-natural-60">2025/08/08</td>
+                      <td class="text-natural-60">60分鐘</td>
+                      <td class="text-natural-60">
+                        <span class="badge rounded-pill border">面對面</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">
+                      <td class="text-natural-60">
                         職涯定位-職涯探索包 | 2/6堂
                       </td>
-                      <td class="text-secondary">2025/07/07</td>
-                      <td class="text-secondary">60分鐘</td>
-                      <td class="text-secondary">
-                        <span
-                          class="badge rounded-pill text-bg-light text-secondary border"
-                          >面對面</span
-                        >
+                      <td class="text-natural-60">2025/07/07</td>
+                      <td class="text-natural-60">60分鐘</td>
+                      <td class="text-natural-60">
+                        <span class="badge rounded-pill border">面對面</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">
+                      <td class="text-natural-60">
                         職涯定位-職涯探索包 | 1/6堂
                       </td>
-                      <td class="text-secondary">2025/06/06</td>
-                      <td class="text-secondary">90分鐘</td>
+                      <td class="text-natural-60">2025/06/06</td>
+                      <td class="text-natural-60">90分鐘</td>
                       <td>
-                        <span
-                          class="badge rounded-pill text-bg-light text-secondary border"
-                          >面對面</span
-                        >
+                        <span class="badge rounded-pill border">面對面</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                   </tbody>
                 </table>
@@ -460,8 +443,8 @@
                   <div class="d-flex gap-4 pb-5 border-bottom mb-5">
                     <!--左側表單-->
                     <div class="flex-shrink-0 side-width">
-                      <h2 class="h4 mb-3">職旅計劃概況</h2>
-                      <p class="text-secondary">
+                      <h2 class="h4 mb-1">職旅計劃概況</h2>
+                      <p class="text-natural-60">
                         欄位皆為<span
                           class="badge rounded-pill text-bg-danger ms-2"
                           >必填</span
@@ -471,7 +454,7 @@
                     <!--右側表單-->
                     <div class="main-width">
                       <!--目前職業狀態-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">目前職業狀態</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -560,7 +543,7 @@
                         </div>
                       </div>
                       <!--工作產業-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="dropdown">
                           <button
                             class="form-select text-start py-3 border"
@@ -602,7 +585,7 @@
                         </div>
                       </div>
                       <!--年資-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="dropdown">
                           <button
                             class="form-select text-start py-3 border"
@@ -632,7 +615,7 @@
                         </div>
                       </div>
                       <!--月收入區間-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">月收入區間</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -709,7 +692,7 @@
                         </div>
                       </div>
                       <!--職業摘要-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -725,7 +708,7 @@
                         </div>
                       </div>
                       <!--作品案例展示-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <input
                             type="text"
@@ -757,8 +740,8 @@
                   <div class="d-flex gap-4 pb-5 border-bottom mb-5">
                     <!--左側表單-->
                     <div class="flex-shrink-0 side-width">
-                      <h2 class="h4 mb-3">職涯規劃</h2>
-                      <p class="text-secondary">
+                      <h2 class="h4 mb-1">職涯規劃</h2>
+                      <p class="text-natural-60">
                         欄位皆為<span
                           class="badge rounded-pill text-bg-danger ms-2"
                           >必填</span
@@ -768,7 +751,7 @@
                     <!--右側表單-->
                     <div class="main-width">
                       <!--1 年短期職涯目標-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -783,7 +766,7 @@
                         </div>
                       </div>
                       <!--1-3 年中長期職涯願景-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -798,7 +781,7 @@
                         </div>
                       </div>
                       <!--理想工作模式-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">理想工作模式</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -863,7 +846,7 @@
                         </div>
                       </div>
                       <!--目標薪資/收入-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <input
                             type="text"
@@ -875,7 +858,7 @@
                         </div>
                       </div>
                       <!--目前面臨的職涯挑戰-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">目前面臨的職涯挑戰</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -967,7 +950,7 @@
                         </div>
                       </div>
                       <!--期望獲得的協助與資源-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">期望獲得的協助與資源</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -1070,7 +1053,7 @@
                         </div>
                       </div>
                       <!--感興趣的服務方案-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">感興趣的服務方案</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -1112,13 +1095,13 @@
                   <div class="d-flex gap-4 pb-5 border-bottom mb-5">
                     <!--左側表單-->
                     <div class="flex-shrink-0 side-width">
-                      <h2 class="h4 mb-3">專業技能區塊</h2>
-                      <p class="text-secondary">欄位皆為選填</p>
+                      <h2 class="h4 mb-1">專業技能區塊</h2>
+                      <p class="text-natural-60">欄位皆為選填</p>
                     </div>
                     <!--右側表單-->
                     <div class="main-width">
                       <!--核心專業領域-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <p class="mb-2">核心專業領域</p>
                         <div class="form-check form-check-inline me-4">
                           <input
@@ -1232,7 +1215,7 @@
                         </div>
                       </div>
                       <!--專業背景和核心競爭力-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1247,7 +1230,7 @@
                         </div>
                       </div>
                       <!--專業技能-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1262,7 +1245,7 @@
                         </div>
                       </div>
                       <!--語文能力-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1277,7 +1260,7 @@
                         </div>
                       </div>
                       <!--資格證照-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1297,13 +1280,13 @@
                   <div class="d-flex gap-4 mb-5">
                     <!--教育背景-->
                     <div class="flex-shrink-0 side-width">
-                      <h2 class="h4 mb-3">教育背景</h2>
-                      <p class="text-secondary">欄位皆為選填</p>
+                      <h2 class="h4 mb-1">教育背景</h2>
+                      <p class="text-natural-60">欄位皆為選填</p>
                     </div>
                     <!--右側表單-->
                     <div class="main-width">
                       <!--學歷背景-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1318,7 +1301,7 @@
                         </div>
                       </div>
                       <!--專業培訓與工作坊-->
-                      <div class="mb-4">
+                      <div class="mb-5">
                         <div class="form-floating">
                           <textarea
                             class="form-control"
@@ -1380,7 +1363,7 @@
           <a class="nav-link" href="#">用戶條款</a>
         </li>
       </ul>
-      <p class="fs-6 text-secondary">
+      <p class="fs-8 text-natural-50">
         Copyright © 2025 職旅 workway. All rights reserved.
       </p>
     </div>
