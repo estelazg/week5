@@ -8,9 +8,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>index</title>
-    <script type="module" crossorigin src="/week5/assets/main-CC2QhkB7.js"></script>
-    <link rel="stylesheet" crossorigin href="/week5/assets/main-4N6xRI87.css">
+    <script type="module" crossorigin src="/week5/assets/main-Cr2LVc32.js"></script>
+    <link rel="stylesheet" crossorigin href="/week5/assets/main-qWr3yHzA.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom py-3">
@@ -43,8 +44,11 @@
           <a class="nav-link" href="#">聯絡我們</a>
         </li>
       </ul>
+      <!-- 登入/註冊 按鈕 -->
       <button
         type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#login"
         class="btn btn-outline-dark border rounded-4 py-2 px-5"
       >
         登入/註冊
@@ -52,6 +56,194 @@
     </div>
   </div>
 </nav>
+<!-- 登入 -->
+<div
+  class="modal fade"
+  id="login"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="login d-flex">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/login.png?raw=true"
+          alt=""
+          class="d-none d-lg-block"
+        />
+        <div class="text-center w-100 px-7">
+          <div class="d-flex justify-content-end pt-5">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <h2 class="fs-lg-2 fw-bold pt-7 pb-7">登入</h2>
+
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.3%2010.2083C19.3%209.55825%2019.2417%208.93325%2019.1333%208.33325H10.5V11.8833H15.4333C15.2167%2013.0249%2014.5667%2013.9916%2013.5917%2014.6416V16.9499H16.5667C18.3%2015.3499%2019.3%2012.9999%2019.3%2010.2083Z'%20fill='%234285F4'/%3e%3cpath%20d='M10.5%2019.1667C12.975%2019.1667%2015.05%2018.35%2016.5667%2016.95L13.5917%2014.6417C12.775%2015.1917%2011.7333%2015.525%2010.5%2015.525C8.11665%2015.525%206.09165%2013.9167%205.36665%2011.75H2.31665V14.1167C3.82498%2017.1083%206.91665%2019.1667%2010.5%2019.1667Z'%20fill='%2334A853'/%3e%3cpath%20d='M5.36665%2011.7416C5.18331%2011.1916%205.07498%2010.6083%205.07498%209.99993C5.07498%209.3916%205.18331%208.80827%205.36665%208.25827V5.8916H2.31665C1.69165%207.12493%201.33331%208.5166%201.33331%209.99993C1.33331%2011.4833%201.69165%2012.8749%202.31665%2014.1083L4.69165%2012.2583L5.36665%2011.7416Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M10.5%204.48325C11.85%204.48325%2013.05%204.94992%2014.0083%205.84992L16.6333%203.22492C15.0417%201.74159%2012.975%200.833252%2010.5%200.833252C6.91665%200.833252%203.82498%202.89159%202.31665%205.89159L5.36665%208.25825C6.09165%206.09159%208.11665%204.48325%2010.5%204.48325Z'%20fill='%23EA4335'/%3e%3c/svg%3e" class="me-1" />Google
+          </button>
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="data:image/svg+xml,%3csvg%20width='17'%20height='14'%20viewBox='0%200%2017%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M11.0025%200.333252C11.6225%200.333252%2012.2775%200.549919%2012.8775%200.789085L13.3166%200.969085C14.3666%201.40909%2014.9566%202.33242%2015.4141%203.34659C16.1566%204.99242%2016.6725%207.18659%2016.8508%208.85492C16.9358%209.64659%2016.9566%2010.4433%2016.8041%2010.9791C16.64%2011.5516%2016.0816%2011.9566%2015.5391%2012.2749L15.2708%2012.4274L14.9925%2012.5824C14.8491%2012.6624%2014.7016%2012.7416%2014.555%2012.8191L14.12%2013.0441L13.5225%2013.3416L13.0416%2013.5783C12.9434%2013.6312%2012.8355%2013.6639%2012.7244%2013.6744C12.6133%2013.6849%2012.5012%2013.673%2012.3948%2013.6393C12.2884%2013.6057%2012.1899%2013.551%2012.105%2013.4785C12.0201%2013.406%2011.9507%2013.3173%2011.9007%2013.2174C11.8508%2013.1176%2011.8215%2013.0088%2011.8144%2012.8974C11.8074%2012.786%2011.8228%2012.6744%2011.8597%2012.5691C11.8966%2012.4637%2011.9543%2012.3669%2012.0294%2012.2843C12.1044%2012.2017%2012.1953%2012.1351%2012.2966%2012.0883L12.955%2011.7633L12.4716%2011.2558C11.3133%2011.7308%209.94914%2011.9999%208.49997%2011.9999C7.0508%2011.9999%205.68664%2011.7316%204.5283%2011.2558L4.04497%2011.7624L4.7058%2012.0874C4.80375%2012.1363%204.8911%2012.2041%204.96287%2012.2867C5.03464%2012.3694%205.08942%2012.4654%205.12409%2012.5693C5.15875%2012.6731%205.17263%2012.7828%205.16491%2012.892C5.1572%2013.0012%205.12806%2013.1078%205.07914%2013.2058C5.03022%2013.3037%204.96249%2013.391%204.87982%2013.4628C4.79714%2013.5346%204.70114%2013.5894%204.59729%2013.624C4.38756%2013.694%204.15861%2013.6779%203.9608%2013.5791L3.50747%2013.3541C3.17247%2013.1874%202.83664%2013.0224%202.50497%2012.8483L1.73164%2012.4274L1.46414%2012.2749C0.921638%2011.9566%200.362471%2011.5516%200.199138%2010.9791C0.0458045%2010.4433%200.0674711%209.64742%200.151638%208.85409C0.329971%207.18659%200.845805%204.99242%201.5883%203.34659C2.0458%202.33242%202.6358%201.40909%203.6858%200.969085C4.38247%200.677419%205.22664%200.333252%205.99997%200.333252C6.50247%200.333252%206.89747%200.795752%206.82497%201.28909C7.37952%201.20703%207.93938%201.16609%208.49997%201.16659C9.0758%201.16659%209.6383%201.20825%2010.1783%201.28992C10.1622%201.17158%2010.1715%201.05117%2010.2055%200.936676C10.2394%200.82218%2010.2973%200.716204%2010.3753%200.625762C10.4533%200.53532%2010.5496%200.462475%2010.6579%200.412048C10.7662%200.361621%2010.8831%200.334764%2011.0025%200.333252ZM5.79164%205.74992C5.40486%205.74992%205.03393%205.90356%204.76044%206.17705C4.48695%206.45055%204.3333%206.82148%204.3333%207.20825C4.3333%207.59503%204.48695%207.96596%204.76044%208.23945C5.03393%208.51294%205.40486%208.66659%205.79164%208.66659C6.17841%208.66659%206.54935%208.51294%206.82284%208.23945C7.09633%207.96596%207.24997%207.59503%207.24997%207.20825C7.24997%206.82148%207.09633%206.45055%206.82284%206.17705C6.54935%205.90356%206.17841%205.74992%205.79164%205.74992ZM11.2083%205.74992C10.8215%205.74992%2010.4506%205.90356%2010.1771%206.17705C9.90362%206.45055%209.74997%206.82148%209.74997%207.20825C9.74997%207.59503%209.90362%207.96596%2010.1771%208.23945C10.4506%208.51294%2010.8215%208.66659%2011.2083%208.66659C11.5951%208.66659%2011.966%208.51294%2012.2395%208.23945C12.513%207.96596%2012.6666%207.59503%2012.6666%207.20825C12.6666%206.82148%2012.513%206.45055%2012.2395%206.17705C11.966%205.90356%2011.5951%205.74992%2011.2083%205.74992Z'%20fill='%23586AEA'/%3e%3c/svg%3e" class="me-1" />Discord
+          </button>
+          <hr />
+          <form>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="iogin-account"
+                placeholder="帳號"
+              />
+              <label for="login-password">帳號</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="login-password"
+                placeholder="密碼"
+              />
+              <label for="login-password">密碼</label
+              ><span class="material-symbols-outlined eyes">
+                visibility_off
+              </span>
+            </div>
+          </form>
+          <p class="fs-8 text-end text-natural-50 mb-4">
+            <a href="#">忘記密碼</a>
+          </p>
+          <button type="button" class="btn btn-dark w-100 py-3 mb-7">
+            送出<span class="material-icons-outlined align-bottom">
+              keyboard_arrow_right
+            </span>
+          </button>
+          <p>
+            <span class="text-natural-50 me-1">不是會員？</span>
+            <a
+              href="#"
+              class="text-primary-60"
+              data-bs-toggle="modal"
+              data-bs-target="#register"
+            >
+              快速註冊
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 註冊 -->
+<div
+  class="modal fade"
+  id="register"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="register d-flex">
+        <div class="text-center w-100 px-7">
+          <div class="d-flex justify-content-end pt-5">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <h2 class="fs-lg-2 fw-bold pt-7 pb-7">登入</h2>
+
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.3%2010.2083C19.3%209.55825%2019.2417%208.93325%2019.1333%208.33325H10.5V11.8833H15.4333C15.2167%2013.0249%2014.5667%2013.9916%2013.5917%2014.6416V16.9499H16.5667C18.3%2015.3499%2019.3%2012.9999%2019.3%2010.2083Z'%20fill='%234285F4'/%3e%3cpath%20d='M10.5%2019.1667C12.975%2019.1667%2015.05%2018.35%2016.5667%2016.95L13.5917%2014.6417C12.775%2015.1917%2011.7333%2015.525%2010.5%2015.525C8.11665%2015.525%206.09165%2013.9167%205.36665%2011.75H2.31665V14.1167C3.82498%2017.1083%206.91665%2019.1667%2010.5%2019.1667Z'%20fill='%2334A853'/%3e%3cpath%20d='M5.36665%2011.7416C5.18331%2011.1916%205.07498%2010.6083%205.07498%209.99993C5.07498%209.3916%205.18331%208.80827%205.36665%208.25827V5.8916H2.31665C1.69165%207.12493%201.33331%208.5166%201.33331%209.99993C1.33331%2011.4833%201.69165%2012.8749%202.31665%2014.1083L4.69165%2012.2583L5.36665%2011.7416Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M10.5%204.48325C11.85%204.48325%2013.05%204.94992%2014.0083%205.84992L16.6333%203.22492C15.0417%201.74159%2012.975%200.833252%2010.5%200.833252C6.91665%200.833252%203.82498%202.89159%202.31665%205.89159L5.36665%208.25825C6.09165%206.09159%208.11665%204.48325%2010.5%204.48325Z'%20fill='%23EA4335'/%3e%3c/svg%3e" class="me-1" />Google
+          </button>
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="data:image/svg+xml,%3csvg%20width='17'%20height='14'%20viewBox='0%200%2017%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M11.0025%200.333252C11.6225%200.333252%2012.2775%200.549919%2012.8775%200.789085L13.3166%200.969085C14.3666%201.40909%2014.9566%202.33242%2015.4141%203.34659C16.1566%204.99242%2016.6725%207.18659%2016.8508%208.85492C16.9358%209.64659%2016.9566%2010.4433%2016.8041%2010.9791C16.64%2011.5516%2016.0816%2011.9566%2015.5391%2012.2749L15.2708%2012.4274L14.9925%2012.5824C14.8491%2012.6624%2014.7016%2012.7416%2014.555%2012.8191L14.12%2013.0441L13.5225%2013.3416L13.0416%2013.5783C12.9434%2013.6312%2012.8355%2013.6639%2012.7244%2013.6744C12.6133%2013.6849%2012.5012%2013.673%2012.3948%2013.6393C12.2884%2013.6057%2012.1899%2013.551%2012.105%2013.4785C12.0201%2013.406%2011.9507%2013.3173%2011.9007%2013.2174C11.8508%2013.1176%2011.8215%2013.0088%2011.8144%2012.8974C11.8074%2012.786%2011.8228%2012.6744%2011.8597%2012.5691C11.8966%2012.4637%2011.9543%2012.3669%2012.0294%2012.2843C12.1044%2012.2017%2012.1953%2012.1351%2012.2966%2012.0883L12.955%2011.7633L12.4716%2011.2558C11.3133%2011.7308%209.94914%2011.9999%208.49997%2011.9999C7.0508%2011.9999%205.68664%2011.7316%204.5283%2011.2558L4.04497%2011.7624L4.7058%2012.0874C4.80375%2012.1363%204.8911%2012.2041%204.96287%2012.2867C5.03464%2012.3694%205.08942%2012.4654%205.12409%2012.5693C5.15875%2012.6731%205.17263%2012.7828%205.16491%2012.892C5.1572%2013.0012%205.12806%2013.1078%205.07914%2013.2058C5.03022%2013.3037%204.96249%2013.391%204.87982%2013.4628C4.79714%2013.5346%204.70114%2013.5894%204.59729%2013.624C4.38756%2013.694%204.15861%2013.6779%203.9608%2013.5791L3.50747%2013.3541C3.17247%2013.1874%202.83664%2013.0224%202.50497%2012.8483L1.73164%2012.4274L1.46414%2012.2749C0.921638%2011.9566%200.362471%2011.5516%200.199138%2010.9791C0.0458045%2010.4433%200.0674711%209.64742%200.151638%208.85409C0.329971%207.18659%200.845805%204.99242%201.5883%203.34659C2.0458%202.33242%202.6358%201.40909%203.6858%200.969085C4.38247%200.677419%205.22664%200.333252%205.99997%200.333252C6.50247%200.333252%206.89747%200.795752%206.82497%201.28909C7.37952%201.20703%207.93938%201.16609%208.49997%201.16659C9.0758%201.16659%209.6383%201.20825%2010.1783%201.28992C10.1622%201.17158%2010.1715%201.05117%2010.2055%200.936676C10.2394%200.82218%2010.2973%200.716204%2010.3753%200.625762C10.4533%200.53532%2010.5496%200.462475%2010.6579%200.412048C10.7662%200.361621%2010.8831%200.334764%2011.0025%200.333252ZM5.79164%205.74992C5.40486%205.74992%205.03393%205.90356%204.76044%206.17705C4.48695%206.45055%204.3333%206.82148%204.3333%207.20825C4.3333%207.59503%204.48695%207.96596%204.76044%208.23945C5.03393%208.51294%205.40486%208.66659%205.79164%208.66659C6.17841%208.66659%206.54935%208.51294%206.82284%208.23945C7.09633%207.96596%207.24997%207.59503%207.24997%207.20825C7.24997%206.82148%207.09633%206.45055%206.82284%206.17705C6.54935%205.90356%206.17841%205.74992%205.79164%205.74992ZM11.2083%205.74992C10.8215%205.74992%2010.4506%205.90356%2010.1771%206.17705C9.90362%206.45055%209.74997%206.82148%209.74997%207.20825C9.74997%207.59503%209.90362%207.96596%2010.1771%208.23945C10.4506%208.51294%2010.8215%208.66659%2011.2083%208.66659C11.5951%208.66659%2011.966%208.51294%2012.2395%208.23945C12.513%207.96596%2012.6666%207.59503%2012.6666%207.20825C12.6666%206.82148%2012.513%206.45055%2012.2395%206.17705C11.966%205.90356%2011.5951%205.74992%2011.2083%205.74992Z'%20fill='%23586AEA'/%3e%3c/svg%3e" class="me-1" />Discord
+          </button>
+          <hr />
+          <form>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="register-account"
+                placeholder="帳號"
+              />
+              <label for="register-account">帳號</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="register-password"
+                placeholder="密碼"
+              />
+              <label for="register-password">密碼</label
+              ><span class="material-symbols-outlined eyes">
+                visibility_off
+              </span>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="passwordcheck"
+                placeholder="確認密碼"
+              />
+              <label for="passwordcheck">確認密碼</label
+              ><span class="material-symbols-outlined eyes">
+                visibility_off
+              </span>
+            </div>
+            <div class="form-check text-start mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="checkDefault"
+              />
+              <label class="form-check-label fs-8" for="checkDefault">
+                我同意 <a href="" class="text-primary-60">服務條款</a> 和<a
+                  href="../pages/privacy.html"
+                  class="text-primary-60"
+                >
+                  隱私政策</a
+                >
+              </label>
+            </div>
+          </form>
+          <button type="button" class="btn btn-dark w-100 py-3 mb-7">
+            送出<span class="material-icons-outlined align-bottom">
+              keyboard_arrow_right
+            </span>
+          </button>
+          <p>
+            <span class="text-natural-50 me-1">已經會員？ </span>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+              class="text-primary-60"
+            >
+              直接登入
+            </a>
+          </p>
+        </div>
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/register.png?raw=true"
+          alt=""
+          class="d-none d-lg-block"
+        />
+      </div>
+    </div>
+  </div>
+</div>
     <header class="container-fluid header pb-lg-8 pb-6">
       <div class="pb-6">
         <h1 class="display-lg-1 fs-2 fw-bold pt-8 pb-5 text-center">
@@ -75,7 +267,7 @@
           </button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-down">
         <div class="col-lg-4 d-none d-lg-block">
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/hero-1.png?raw=true"
@@ -110,14 +302,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 d-flex align-items-center">
-            <div>
+            <div data-aos="flip-right">
               <img
                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week5/logo.svg"
                 alt=""
                 class="pb-4"
               />
               <h2 class="fs-lg-1 fs-2 fw-bold pb-4">
-                他們已經踏上職旅<br />聽聽他們的故事
+                他們已經踏上職旅聽聽他們的故事
               </h2>
               <p class="fs-lg-6 fs-8 text-natural-50 pb-4">
                 每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活
@@ -126,7 +318,7 @@
           </div>
           <div class="col-lg-8">
             <div class="row flex-nowrap overflow-x-auto">
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-11">
                 <div class="card mb-3">
                   <span class="badge text-bg-primary card-badge py-2 px-6 fs-7"
                     >數位遊牧 2 年</span
@@ -150,7 +342,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-11">
                 <div class="card mb-3">
                   <span class="badge text-bg-primary card-badge py-2 px-6 fs-7"
                     >數位遊牧 2 年</span
@@ -175,7 +367,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-11">
                 <div class="card mb-3">
                   <span class="badge text-bg-primary card-badge py-2 px-6 fs-7"
                     >數位遊牧 3 年</span
@@ -208,7 +400,7 @@
     <section class="workway">
       <div class="container py-lg-8 py-7">
         <div class="row justify-content-center">
-          <div class="text-center">
+          <div class="text-center" data-aos="fade-down">
             <img
               src="/week5/assets/why-BewnmobV.svg"
               alt="為什麼"
@@ -226,7 +418,7 @@
           </div>
         </div>
         <div class="row pb-lg-7 pb-5">
-          <div class="col-lg-4 pb-4">
+          <div class="col-lg-4 pb-4" data-aos="zoom-in">
             <div class="card">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-1.png?raw=true"
@@ -247,7 +439,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 pb-4">
+          <div class="col-lg-4 pb-4" data-aos="zoom-in">
             <div class="card">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-2.png?raw=true"
@@ -268,7 +460,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="zoom-in">
             <div class="card">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-3.png?raw=true"
@@ -293,42 +485,46 @@
         </p>
       </div>
     </section>
-    <section class="container">
-      <div class="row py-lg-8 py-7">
-        <div class="col-lg-6">
-          <img
-            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/team.png?raw=true"
-            alt=""
-            class="rounded-1 pb-5"
-          />
-        </div>
-        <div class="col-lg-6">
-          <h2
-            class="fs-lg-1 fs-2 fw-bold pb-lg-5 pb-4 text-lg-start text-center"
-          >
-            遇見你的職涯夥伴
-          </h2>
-          <p class="fs-lg-6 fs-8 text-natural-50 pb-lg-5 pb-4">
-            每位顧問都有獨特專長，更重要的是：
-          </p>
-          <blockquote
-            class="fs-lg-4 fs-7 text-primary-60 fw-bold text-lg-start text-center"
-          >
-            “ 他們都曾面對你正在經歷的挑戰 ”
-          </blockquote>
-          <p class="fs-lg-6 fs-8 text-natural-50 pb-lg-5 pb-4">
-            職旅 WorkWay
-            匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。我們的顧問不只教授理論，更分享親身經歷的挑戰與解決之道。
-          </p>
-          <p class="fs-lg-6 fs-8 text-natural-50 pb-lg-5 pb-4">
-            我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。
-          </p>
-          <button type="button" class="btn btn-dark rounded-4 py-3 px-5">
-            了解更多職旅夥伴
-            <span class="material-icons-outlined align-bottom">
-              keyboard_arrow_right
-            </span>
-          </button>
+    <section class="partner-bg">
+      <div class="container">
+        <div class="row py-lg-8 py-7">
+          <div class="col-lg-6" data-aos="zoom-in-down">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/team.png?raw=true"
+              alt=""
+              class="rounded-1 mb-5"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2
+              class="fs-lg-1 fs-2 fw-bold pb-lg-5 pb-4 text-lg-start text-center"
+            >
+              遇見你的職涯夥伴
+            </h2>
+            <p class="fs-lg-6 fs-8 text-natural-50 pb-lg-5 pb-4">
+              每位顧問都有獨特專長，更重要的是：
+            </p>
+            <blockquote
+              class="fs-lg-4 fs-7 text-primary-60 fw-bold text-lg-start text-center"
+            >
+              “ 他們都曾面對你正在經歷的挑戰 ”
+            </blockquote>
+            <p class="fs-lg-6 fs-8 text-natural-50 pb-lg-5 pb-4">
+              職旅 WorkWay
+              匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。我們的顧問不只教授理論，更分享親身經歷的挑戰與解決之道。
+            </p>
+            <p class="fs-lg-6 fs-8 text-natural-50 pb-lg-5 pb-4">
+              我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。
+            </p>
+            <div class="d-flex justify-content-lg-start justify-content-center">
+              <button type="button" class="btn btn-dark rounded-4 py-3 px-5">
+                了解更多職旅夥伴
+                <span class="material-icons-outlined align-bottom">
+                  keyboard_arrow_right
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -339,9 +535,9 @@
           <p class="fs-6 pb-7">簡單四步，踏上你的職旅</p>
         </div>
         <div class="row flex-lg-wrap flex-nowrap overflow-x-auto">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-10" data-aos="flip-left">
             <div class="card">
-              <div class="">
+              <div>
                 <span
                   class="text-bg-natural-95 service-badge fw-bold text-primary-60"
                 >
@@ -361,7 +557,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div
+            class="col-lg-3 col-10"
+            data-aos="flip-left"
+            data-aos-delay="900"
+          >
             <div class="card">
               <div>
                 <span
@@ -383,7 +583,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div
+            class="col-lg-3 col-10"
+            data-aos="flip-left"
+            data-aos-delay="1000"
+          >
             <div class="card">
               <div>
                 <span
@@ -405,7 +609,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div
+            class="col-lg-3 col-10"
+            data-aos="flip-left"
+            data-aos-delay="1100"
+          >
             <div class="card">
               <div>
                 <span
@@ -431,20 +639,29 @@
       </div>
     </section>
     <section class="faq py-lg-8 py-7">
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-down">
         <img src="data:image/svg+xml,%3csvg%20width='120'%20height='64'%20viewBox='0%200%20120%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='path-1-inside-1_12672_2609'%20fill='white'%3e%3cpath%20d='M108%200.201172C114.627%200.201173%20120%205.57376%20120%2012.2012V38.2012C120%2044.8286%20114.627%2050.2012%20108%2050.2012H73.5977L60%2063.7988L46.4023%2050.2012H12C5.37258%2050.2012%200%2044.8286%200%2038.2012V12.2012C2.57711e-07%205.57376%205.37258%200.201172%2012%200.201172H108Z'/%3e%3c/mask%3e%3cpath%20d='M108%200.201172C114.627%200.201173%20120%205.57376%20120%2012.2012V38.2012C120%2044.8286%20114.627%2050.2012%20108%2050.2012H73.5977L60%2063.7988L46.4023%2050.2012H12C5.37258%2050.2012%200%2044.8286%200%2038.2012V12.2012C2.57711e-07%205.57376%205.37258%200.201172%2012%200.201172H108Z'%20fill='%23FCFCFD'/%3e%3cpath%20d='M108%200.201172V-1.79883V0.201172ZM120%2038.2012H122H120ZM108%2050.2012V52.2012V50.2012ZM73.5977%2050.2012V48.2012H72.7692L72.1834%2048.787L73.5977%2050.2012ZM60%2063.7988L58.5858%2065.213L60%2066.6273L61.4142%2065.213L60%2063.7988ZM46.4023%2050.2012L47.8166%2048.787L47.2308%2048.2012H46.4023V50.2012ZM12%2050.2012V52.2012V50.2012ZM0%2012.2012H-2H0ZM12%200.201172V-1.79883V0.201172ZM108%200.201172V2.20117C113.523%202.20117%20118%206.67833%20118%2012.2012H120H122C122%204.46919%20115.732%20-1.79883%20108%20-1.79883V0.201172ZM120%2012.2012H118V38.2012H120H122V12.2012H120ZM120%2038.2012H118C118%2043.724%20113.523%2048.2012%20108%2048.2012V50.2012V52.2012C115.732%2052.2012%20122%2045.9332%20122%2038.2012H120ZM108%2050.2012V48.2012H73.5977V50.2012V52.2012H108V50.2012ZM73.5977%2050.2012L72.1834%2048.787L58.5858%2062.3846L60%2063.7988L61.4142%2065.213L75.0119%2051.6154L73.5977%2050.2012ZM60%2063.7988L61.4142%2062.3846L47.8166%2048.787L46.4023%2050.2012L44.9881%2051.6154L58.5858%2065.213L60%2063.7988ZM46.4023%2050.2012V48.2012H12V50.2012V52.2012H46.4023V50.2012ZM12%2050.2012V48.2012C6.47715%2048.2012%202%2043.724%202%2038.2012H0H-2C-2%2045.9332%204.26802%2052.2012%2012%2052.2012V50.2012ZM0%2038.2012H2V12.2012H0H-2V38.2012H0ZM0%2012.2012H2C2%206.67832%206.47715%202.20117%2012%202.20117V0.201172V-1.79883C4.26801%20-1.79883%20-2%204.46919%20-2%2012.2012H0ZM12%200.201172V2.20117H108V0.201172V-1.79883H12V0.201172Z'%20fill='%234A69E8'%20mask='url(%23path-1-inside-1_12672_2609)'/%3e%3cpath%20d='M31.4416%2037.64L26.4616%2017.88H28.4016L33.3816%2037.64H31.4416ZM46.6867%2031.86C48.8867%2031.86%2050.2867%2029.86%2050.2867%2026.54C50.2867%2023.36%2048.8867%2021.46%2046.6867%2021.46C44.4867%2021.46%2043.0867%2023.36%2043.0867%2026.54C43.0867%2029.86%2044.4867%2031.86%2046.6867%2031.86ZM51.4667%2038.02C48.4467%2038.02%2046.3467%2036.4%2045.3267%2034.16C42.1667%2033.56%2040.0667%2030.76%2040.0667%2026.54C40.0667%2021.72%2042.7667%2018.92%2046.6867%2018.92C50.6067%2018.92%2053.3067%2021.74%2053.3067%2026.54C53.3067%2030.58%2051.3867%2033.3%2048.4467%2034.06C49.1267%2035.18%2050.4667%2035.64%2051.8067%2035.64C52.4467%2035.64%2053.0067%2035.54%2053.4267%2035.4L53.9667%2037.58C53.4467%2037.82%2052.5467%2038.02%2051.4667%2038.02ZM59.6573%2022.68C59.6573%2023.3%2059.8573%2023.96%2060.1973%2024.66C61.3573%2023.96%2062.2573%2023.24%2062.2573%2022.16C62.2573%2021.42%2061.9173%2020.88%2061.1573%2020.88C60.2773%2020.88%2059.6573%2021.58%2059.6573%2022.68ZM60.2173%2034.28C57.1173%2034.28%2055.3773%2032.38%2055.3773%2030.08C55.3773%2028.02%2056.6773%2026.82%2058.1573%2025.88C57.5573%2024.76%2057.2173%2023.66%2057.2173%2022.68C57.2173%2020.62%2058.7373%2018.92%2061.0973%2018.92C63.2173%2018.92%2064.5373%2020.2%2064.5373%2022.14C64.5373%2024.1%2062.9373%2025.32%2061.3573%2026.42C62.2373%2027.52%2063.3773%2028.6%2064.5573%2029.5C65.3373%2028.46%2065.9773%2027.2%2066.3773%2025.74H69.0373C68.4973%2027.58%2067.6973%2029.28%2066.5373%2030.82C67.4973%2031.36%2068.3973%2031.74%2069.1773%2031.88L68.4573%2034.28C67.2773%2034.02%2065.9973%2033.5%2064.7573%2032.72C63.5373%2033.68%2062.0373%2034.28%2060.2173%2034.28ZM58.1773%2029.9C58.1773%2031.16%2059.1573%2032.02%2060.5773%2032.02C61.3173%2032.02%2062.0373%2031.74%2062.7373%2031.28C61.4773%2030.24%2060.3373%2029.06%2059.3973%2027.82C58.6773%2028.44%2058.1773%2029.1%2058.1773%2029.9ZM75.0025%2026.28L74.5625%2027.9H78.0825L77.6425%2026.28C77.1825%2024.74%2076.7825%2023.04%2076.3625%2021.44H76.2625C75.8825%2023.06%2075.4425%2024.74%2075.0025%2026.28ZM69.8825%2034L74.6225%2019.18H78.1025L82.8625%2034H79.7625L78.7225%2030.2H73.9225L72.8825%2034H69.8825ZM88.3863%2037.64L93.3663%2017.88H95.3063L90.3463%2037.64H88.3863Z'%20fill='%234A69E8'/%3e%3c/svg%3e" alt="faq" />
         <h2 class="fs-1 fw-bold pb-7">你可能有些困惑...</h2>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 d-flex align-items-end d-none d-lg-block">
+          <div
+            class="col-lg-5 d-flex align-items-end d-none d-lg-block"
+            data-aos="fade-down-right"
+            data-aos-delay="500"
+          >
             <img
               src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/index/qa.svg"
               alt=""
             />
           </div>
           <div class="col-lg-7">
-            <div class="accordion pb-5" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion pb-5"
+              id="accordionPanelsStayOpenExample"
+              data-aos="zoom-in-down"
+              data-aos-delay="600"
+            >
               <div class="accordion-item shadow-sm">
                 <h2 class="accordion-header">
                   <button
@@ -477,7 +694,12 @@
                 </div>
               </div>
             </div>
-            <div class="accordion pb-5" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion pb-5"
+              id="accordionPanelsStayOpenExample"
+              data-aos="zoom-in-down"
+              data-aos-delay="700"
+            >
               <div class="accordion-item shadow-sm rounded-custom mb-3">
                 <h2 class="accordion-header">
                   <button
@@ -507,7 +729,12 @@
                 </div>
               </div>
             </div>
-            <div class="accordion pb-5" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion pb-5"
+              id="accordionPanelsStayOpenExample"
+              data-aos="zoom-in-down"
+              data-aos-delay="800"
+            >
               <div class="accordion-item shadow-sm rounded-custom mb-3">
                 <h2 class="accordion-header">
                   <button
@@ -537,7 +764,12 @@
                 </div>
               </div>
             </div>
-            <div class="accordion pb-5" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion pb-5"
+              id="accordionPanelsStayOpenExample"
+              data-aos="zoom-in-down"
+              data-aos-delay="900"
+            >
               <div class="accordion-item shadow-sm rounded-custom mb-3">
                 <h2 class="accordion-header">
                   <button
@@ -567,7 +799,12 @@
                 </div>
               </div>
             </div>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div
+              class="accordion"
+              id="accordionPanelsStayOpenExample"
+              data-aos="zoom-in-down"
+              data-aos-delay="1000"
+            >
               <div class="accordion-item shadow-sm rounded-custom mb-3">
                 <h2 class="accordion-header">
                   <button
@@ -601,7 +838,7 @@
         </div>
       </div>
     </section>
-    <section class="container py-6">
+    <section class="container py-6 px-5">
       <div class="row">
         <div
           class="bg-primary-60 rounded-lg-5 rounded-3 px-lg-7 py-lg-5 px-5 py-4"
@@ -645,32 +882,27 @@
         </div>
       </div>
     </section>
-    <nav class="navbar navbar-expand-lg border-top py-5 bg-gray">
-  <div class="container">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">服務方案</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">隱私權政策</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">用戶條款</a>
-        </li>
+    <footer class="bg-natural-95 border-top">
+  <nav class="container py-lg-7 py-5">
+    <div
+      class="d-flex justify-content-lg-between justify-content-center flex-lg-nowrap flex-wrap"
+    >
+      <ul
+        class="d-flex flex-lg-nowrap flex-wrap fs-lg-7 fs-8 justify-content-center mb-2 px-lg-0 px-7"
+      >
+        <li><a href="#" class="px-lg-5 px-4 py-lg-0 py-2">服務方案</a></li>
+        <li><a href="#" class="px-lg-5 px-4 py-lg-0 py-2">關於職旅</a></li>
+        <li><a href="#" class="px-lg-5 px-4 py-lg-0 py-2">聯絡我們</a></li>
+        <li><a href="#" class="px-lg-5 px-4 py-lg-0 py-2">隱私權政策</a></li>
+        <li><a href="#" class="px-lg-5 px-4 py-lg-0 py-2">用戶條款</a></li>
       </ul>
       <p class="fs-8 text-natural-50">
         Copyright © 2025 職旅 workway. All rights reserved.
       </p>
     </div>
-  </div>
-</nav>
+  </nav>
+</footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
