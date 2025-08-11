@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom py-3">
   <div class="container">
     <a class="navbar-brand" href="#"
       ><img
@@ -28,13 +28,203 @@
           <a class="nav-link" href="#">聯絡我們</a>
         </li>
       </ul>
-      <a href="user.html"
-        ><img
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
-          alt="user-img"
-          class="user-img rounded-circle border me-2"
-        />Mokumaru</a
+      <!-- 登入/註冊 按鈕 -->
+      <button
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#login"
+        class="btn btn-outline-dark border rounded-4 py-2 px-5"
       >
+        登入/註冊
+      </button>
     </div>
   </div>
 </nav>
+<!-- 登入 -->
+<div
+  class="modal fade"
+  id="login"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="login d-flex">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/login.png?raw=true"
+          alt=""
+          class="d-none d-lg-block"
+        />
+        <div class="text-center w-100 px-7">
+          <div class="d-flex justify-content-end pt-5">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <h2 class="fs-lg-2 fw-bold pt-7 pb-7">登入</h2>
+
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="../assets/images/google.svg" class="me-1" />Google
+          </button>
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="../assets/images/discord.svg" class="me-1" />Discord
+          </button>
+          <hr />
+          <form>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="iogin-account"
+                placeholder="帳號"
+              />
+              <label for="login-password">帳號</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="login-password"
+                placeholder="密碼"
+              />
+              <label for="login-password">密碼</label
+              ><span class="material-symbols-outlined eyes">
+                visibility_off
+              </span>
+            </div>
+          </form>
+          <p class="fs-8 text-end text-natural-50 mb-4">
+            <a href="#">忘記密碼</a>
+          </p>
+          <button type="button" class="btn btn-dark w-100 py-3 mb-7">
+            送出<span class="material-icons-outlined align-bottom">
+              keyboard_arrow_right
+            </span>
+          </button>
+          <p>
+            <span class="text-natural-50 me-1">不是會員？</span>
+            <a
+              href="#"
+              class="text-primary-60"
+              data-bs-toggle="modal"
+              data-bs-target="#register"
+            >
+              快速註冊
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 註冊 -->
+<div
+  class="modal fade"
+  id="register"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="register d-flex">
+        <div class="text-center w-100 px-7">
+          <div class="d-flex justify-content-end pt-5">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <h2 class="fs-lg-2 fw-bold pt-7 pb-7">登入</h2>
+
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="../assets/images/google.svg" class="me-1" />Google
+          </button>
+          <button type="button" class="btn border w-100 rounded-2 py-3 mb-4">
+            <img src="../assets/images/discord.svg" class="me-1" />Discord
+          </button>
+          <hr />
+          <form>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="register-account"
+                placeholder="帳號"
+              />
+              <label for="register-account">帳號</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="register-password"
+                placeholder="密碼"
+              />
+              <label for="register-password">密碼</label
+              ><span class="material-symbols-outlined eyes">
+                visibility_off
+              </span>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="passwordcheck"
+                placeholder="確認密碼"
+              />
+              <label for="passwordcheck">確認密碼</label
+              ><span class="material-symbols-outlined eyes">
+                visibility_off
+              </span>
+            </div>
+            <div class="form-check text-start mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="checkDefault"
+              />
+              <label class="form-check-label fs-8" for="checkDefault">
+                我同意 <a href="" class="text-primary-60">服務條款</a> 和<a
+                  href="../pages/privacy.html"
+                  class="text-primary-60"
+                >
+                  隱私政策</a
+                >
+              </label>
+            </div>
+          </form>
+          <button type="button" class="btn btn-dark w-100 py-3 mb-7">
+            送出<span class="material-icons-outlined align-bottom">
+              keyboard_arrow_right
+            </span>
+          </button>
+          <p>
+            <span class="text-natural-50 me-1">已經會員？ </span>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+              class="text-primary-60"
+            >
+              直接登入
+            </a>
+          </p>
+        </div>
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/register.png?raw=true"
+          alt=""
+          class="d-none d-lg-block"
+        />
+      </div>
+    </div>
+  </div>
+</div>

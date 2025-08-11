@@ -1,3 +1,91 @@
 .index-title {
   font-size: 100px;
 }
+
+.header {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/gradient-ball.png?raw=true);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.story {
+  background: linear-gradient(
+    to bottom,
+    $white 0%,
+    $white 85%,
+    $natural-95 85%,
+    $natural-95 100%
+  );
+}
+.workway {
+  background-color: $natural-95;
+}
+
+.card {
+  overflow: hidden;
+}
+.work-badge {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top-right-radius: 12px;
+  background-color: $natural-50;
+  padding: 12px 24px;
+}
+
+.partner-bg {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/gradient-ball.png?raw=true);
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.service-badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 16px 0 16px 0;
+  background-color: $natural-95;
+  padding: 8px;
+}
+
+.service img {
+  width: 160px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+.faq {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/bg-grid.png?raw=true);
+  background-repeat: repeat;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border-bottom: 1px dashed $natural-85;
+}
+
+.accordion-button::after {
+  transform: rotate(90deg); /* 預設收起時角度 */
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg); /* 展開時轉 90 度 */
+}
+
+.tel {
+  border-bottom: 1px dashed $white;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  .display-lg-1 {
+    font-size: 5rem !important;
+  }
+}
