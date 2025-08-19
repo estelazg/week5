@@ -6,6 +6,6 @@ console.log("Hello world");
 AOS.init({
   offset: 120,
   duration: 1000,
-  once: false,
+  once: true,
   delay: 400,
 });
