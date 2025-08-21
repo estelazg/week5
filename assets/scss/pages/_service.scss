@@ -1,0 +1,57 @@
+.service-bg {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/service/banner-bg.png?raw=true);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-person {
+  transform: translateY(10px);
+}
+
+.service-card {
+  border: 2px solid $secondary-50;
+  border-radius: 24px;
+  background-color: #fcfcfd;
+  overflow: hidden;
+}
+
+.service-card {
+  border-radius: 24px;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.hot-tag {
+  padding: 8px 16px;
+  border-radius: 0 0 12px 0;
+  background-color: $secondary-50;
+  top: 0;
+  left: 0;
+}
+
+.servicelist li::before {
+  content: "stat_0"; /* 指定要的符號名稱 */
+  font-family: "Material Symbols Outlined";
+  color: $primary-60;
+  padding-right: 8px;
+  transform: translateY(-50%); /* 垂直置中 */
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.plan-bg {
+  background: linear-gradient(to bottom, $natural-95 50%, $white 50%);
+}
+
+.plan-img {
+  transform: translateY(2px);
+}
+@media (min-width: 992px) {
+  .service-bg {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/service/banner-bg-pc.png?raw=true);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
